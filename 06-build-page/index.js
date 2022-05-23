@@ -45,7 +45,7 @@ function recurceCopy(dir, exit) {
               if (error) {
                 return console.erroror(error);
               }
-                          });
+            });
             recurceCopy(`${dir}\\${file.name}`, path.join(exit, file.name));
           } else {
             recurceCopy(`${dir}\\${file.name}`, path.join(exit, file.name));
@@ -65,7 +65,7 @@ fs.stat (pathCopy, function (error) {
       if (error) {
         return console.erroror(error);
       }
-      });
+    });
     createTemplate();
   } else {  fs.readdir(pathCopy, function (error)  {
     if (error)
